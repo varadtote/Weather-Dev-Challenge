@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="devchallenges.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="Input flex">
+          <input
+            type="text"
+            id="location"
+            placeholder="search for places"
+            autofocus
+          />
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="sidebar-weather-icon flex">
+          <!-- icon  -->
+          <img src="" alt="weatherIcon" class="sidebar-weather-icon-img" />
+        </div>
+        <div class="sidebar-weather-details">
+          <div class="sidebar-weather-temp"></div>
+          <div class="sidebar-weather-type"></div>
+          <div class="flex today">
+            <div>Today -</div>
+            <div class="sidebar-weather-date">Today - Fri 5 Jun</div>
+          </div>
+          <div class="region">
+            <div class="sidebar-weather-region"></div>
+            <div class="sidebar-weather-location">India</div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="temp-unit-control flex">
+          <div class="celsius celsius-active flex">C</div>
+          <div class="franheight flex">F</div>
+        </div>
+        <div class="weather-forecast-tray flex">
+          <div class="weather-forecast flex">
+            <div class="tommorow">Tommorow</div>
+            <div class="forecast-icon-tommorow">
+              <img src="" alt="" class="forecast-icon-tommorow-img" />
+            </div>
+            <div class="forecast-temp-details flex">
+              <div class="forecast-temp-tommorow-max maxTemp"></div>
+              <div class="forecast-temp-tommorow-min minTemp"></div>
+            </div>
+          </div>
+          <div class="weather-forecast flex">
+            <div class="dayOne">Tommorow</div>
+            <div class="forecast-icon-one">
+              <img src="" alt="" class="forecast-icon-dayOne-img" />
+            </div>
+            <div class="forecast-temp-details flex">
+              <div class="forecast-temp-dayOne-max maxTemp"></div>
+              <div class="forecast-temp-dayOne-min minTemp"></div>
+            </div>
+          </div>
+          <div class="weather-forecast flex">
+            <div class="dayTwo">Tommorow</div>
+            <div class="forecast-icon-two">
+              <img src="" alt="" class="forecast-icon-dayTwo-img" />
+            </div>
+            <div class="forecast-temp-details flex">
+              <div class="forecast-temp-dayTwo-max maxTemp"></div>
+              <div class="forecast-temp-dayTwo-min minTemp"></div>
+            </div>
+          </div>
+          <div class="weather-forecast flex">
+            <div class="dayThree">Tommorow</div>
+            <div class="forecast-icon-three">
+              <img src="" alt="" class="forecast-icon-dayThree-img" />
+            </div>
+            <div class="forecast-temp-details flex">
+              <div class="forecast-temp-dayThree-max maxTemp"></div>
+              <div class="forecast-temp-dayThree-min minTemp"></div>
+            </div>
+          </div>
+          <div class="weather-forecast flex">
+            <div class="dayFour">Tommorow</div>
+            <div class="forecast-icon-four">
+              <img src="" alt="" class="forecast-icon-dayFour-img" />
+            </div>
+            <div class="forecast-temp-details flex">
+              <div class="forecast-temp-dayFour-max maxTemp"></div>
+              <div class="forecast-temp-dayFour-min minTemp"></div>
+            </div>
+          </div>
+        </div>
+        <div class="highlights">
+          <h3 class="todayHighlight">Todays HighLights</h3>
+          <div class="highlights-grid">
+            <div class="highlight-Grid windStatus flex">
+              <h3>WindStatus</h3>
+              <div class="flex cgap">
+                <div class="windSpeedValue"></div>
+                <div>mph</div>
+              </div>
+              <div class="windDirectionValue"></div>
+            </div>
+            <div class="highlight-Grid Humidity flex">
+              <h3>Humidity</h3>
+              <div class="flex cgap">
+                <div class="humidityValue"></div>
+                <div>%</div>
+              </div>
+            </div>
+            <div class="highlight-Grid Visiblity flex">
+              <h3>Visiblity</h3>
+              <div class="flex cgap">
+                <div class="visiblityValue"></div>
+                <div>miles</div>
+              </div>
+            </div>
+            <div class="highlight-Grid AirPressure flex">
+              <h3>Air Pressure</h3>
+              <div class="flex cgap">
+                <div class="airPressureValue"></div>
+                <div>mb</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
